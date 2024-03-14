@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./main.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title> Exam - 2 || Road Signs</title>
+</head>
+<body>
+	
+	
+	<!-- Your Code Here -->
+
+	<section class="gameOver-message-section h-screen flex justify-center items-center hidden">
+		<h2 class="game-over-message text-[40px] text-white text-center">GAME OVER</h2>
+	</section>
+	
+	<section class="youWin-message-section h-screen flex justify-center items-center hidden">
+		<h2 class="youWin-message text-[40px] text-white text-center">YOU WIN</h2>
+	</section>
+	
+	<main>
+		<section class="game-section flex flex-col justify-center items-center mt-[200px]">
+			<h1 class="welcome-message text-[35px] text-white font-bold mb-[40px]">Welcome</h1>
+			<h2 class="game-level text-2xl text-white mb-5 hidden">Level</h2>
+			<select class="game-level-select mb-11 p-1 rounded outline-none hidden">
+				<option value="game-level" hidden>choose level</option>
+				<option value="easy">Easy</option> 
+				<option value="medium">Medium</option>
+				<option value="hard">Hard</option>
+			</select>
+			<h2 class="game-time text-2xl text-white mb-5 hidden">Time</h2>
+			<select class="game-time-select mb-8 p-1 rounded outline-none hidden">
+				<option value="3min">3 minut</option>
+				<option value="5min">5 minut</option>
+				<option value="8min">8 minut</option>
+			</select>
+			<button class="game-start-button p-2 rounded bg-white text-black w-[100px] font-bold mt-6 hidden">START</button>
+			<a class="individual-button p-2 rounded bg-white text-black text-xl mb-5 ">INDIVIDUALLY</a>
+			<a class="create-room-button text-white text-[20px] mb-7 " href="#">To Create Room</a>
+			<a class="join-button text-white text-[18px] " href="#">Join</a>
+		</section>
+	</main>
+
+	<section class="js-signs-section p-4 bg-stone-300 hidden">
+		<h2 class="js-signs-title text-xl p-4 bg-stone-400 text-center mt-5">Asosiy yolning oxiri</h2>
+		<ul class="js-signs-list mt-4 flex flex-wrap justify-center gap-3">
+			
+		</ul>
+	</section>
+
+	<template class="js-sings-template">
+		<li class="sign-list-item relative bg-stone-400 w-[200px] px-4 py-2 h-[280px]">
+			<img class="signs-image" src="./images/signs/aholi_punkti.gif" alt="">
+			<img class="checkmark-gif absolute bottom-2 right-2 w-[50px] hidden" src="./images/checkmark.gif" alt="">
+			<img class="error-image absolute bottom-2 right-2 w-[50px] hidden" src="./images/error.png" alt="">
+			<audio class="checkmark-audio" src="./audio/correct-answer.mp3"></audio>
+			<audio class="error-audio" src="./audio/wrong-answer.mp3"></audio>
+		</li>
+	</template>
+
+	<template class="js-titleSings-template">
+		<h2 class="sings-title text-xl p-4 bg-stone-400 text-center mt-5">Asosiy yolning oxiri</h2>
+	</template>
+	
+	
+	
+	
+	<script src="./signs.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>

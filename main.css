@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./images/back-to-future.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-size: cover;
+}
+
+.individual-button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0 0 50px rgba(0, 0, 0, 0.1), 0 0 100px rgba(0, 0, 0, 0.1), 0 0 200px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.gameOver-message-section {
+    background-image: url("./images/GameOver.png");
+}
+
+.youWin-message-section {
+    background-image: url("./images/You\ win.png");
+}
+
